@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_show_device_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="展示蓝牙设备地址" />
+
+        <Button
+            android:id="@+id/button_get_device_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="刷新" />
+
+        <Spinner
+            android:id="@+id/spinner_device_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/button_update_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="更新设备时间" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
